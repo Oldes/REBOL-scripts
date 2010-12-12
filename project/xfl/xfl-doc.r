@@ -25,8 +25,8 @@ REBOL [
 do %../xml-parse/xml-parse.r
 
 doc-path:  copy ""
-doc-paths: either exists? %data/xfl-paths.blk.r [ load %data/xfl-paths.blk.r ][ copy [] ]
-doc-nodes: either exists? %data/xfl-nodes.blk.r [ load %data/xfl-nodes.blk.r ][ copy [] ]
+doc-paths: either exists? %data/doc-paths.r [ load %data/doc-paths.r ][ copy [] ]
+doc-nodes: either exists? %data/doc-nodes.r [ load %data/doc-nodes.r ][ copy [] ]
 ;tabs: copy ""
 
 doc-xfl: func[
@@ -89,8 +89,9 @@ doc-xfl: func[
 ]
 
 foreach dir [
-	"F:\RS\projects-mm\robotek\wii\swf\"
-	"F:\RS\projects-rswf\xfl\latest\tests\"
+	;"F:\RS\projects-mm\robotek\wii\swf\"
+	;"F:\RS\projects-rswf\xfl\latest\tests\"
+	"F:\RS\projects-rswf\xfl\latest\tests\____\"
 ][
 	foreach d read dir: to-rebol-file dir [
 		if exists? file: rejoin [ dir d %DOMDocument.xml] [
@@ -120,10 +121,10 @@ foreach [node atts] doc-nodes [
 	]
 ]
 
-save/header %data/xfl-nodes.blk.r doc-nodes [
+save/header %data/doc-nodes.r doc-nodes [
 	structure: [node-name [possible-attribute [posible-values]]]
 ]
-save/header %data/xfl-paths.blk.r doc-paths [
+save/header %data/doc-paths.r doc-paths [
 	structure: [possible-node-paths]
 ]
 ;probe doc-paths

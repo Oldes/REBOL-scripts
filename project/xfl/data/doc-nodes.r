@@ -487,13 +487,17 @@ REBOL [
         "209" 
         "238"
     ] 
+    "vanishingPoint3DY" [
+        "242"
+    ] 
     "versionInfo" [
         "Saved by Adobe Flash Windows 11.0 build 485" 
         "Saved by Adobe Flash Windows 11.0 build 489"
     ] 
     "viewAngle3D" [
         "50.6510299754819" 
-        "90.4031183572598"
+        "90.4031183572598" 
+        "93"
     ] 
     "width" [
         "1064" 
@@ -985,9 +989,15 @@ REBOL [
 "DOMSymbolInstance" [
     "blendMode" [
         "add" 
+        "darken" 
+        "hardlight" 
         "invert" 
+        "layer" 
+        "lighten" 
         "multiply" 
-        "overlay"
+        "overlay" 
+        "screen" 
+        "subtract"
     ] 
     "cacheAsBitmap" [
         "true"
@@ -1015,6 +1025,10 @@ REBOL [
         "53.95" 
         "72.85" 
         "761.15"
+    ] 
+    "centerPoint3DZ" [
+        "-109" 
+        "-256.95"
     ] 
     "firstFrame" [
         "13" 
@@ -1045,6 +1059,10 @@ REBOL [
         "play once" 
         "single frame"
     ] 
+    "matrix3D" [
+        {0.938172459602356 0.144171386957169 -0.31471711397171 0 0.33102086186409 -0.63962185382843 0.6937644 ...} 
+        "1 0 0 0 0 1 0 0 0 0 1 0 2917 0 -2959 1"
+    ] 
     "name" [
         "" 
         "cloud1" 
@@ -1056,6 +1074,15 @@ REBOL [
         "pochod" 
         "pozadi" 
         "resume"
+    ] 
+    "rotationX" [
+        "-74.0189855219229"
+    ] 
+    "rotationY" [
+        "-212.864158740138"
+    ] 
+    "rotationZ" [
+        "-217"
     ] 
     "selected" [
         "true"
